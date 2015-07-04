@@ -1,6 +1,8 @@
 Reactive Streams: AMQP
 ====
 
+[![Build Status](https://travis-ci.org/iozozturk/reactive-rabbit.svg?branch=master)](https://travis-ci.org/iozozturk/reactive-rabbit)
+
 [Reactive Streams](http://www.reactive-streams.org) driver for AMQP protocol. Powered by [RabbitMQ](https://www.rabbitmq.com/) library.
 
 Available at Maven Central for Scala 2.10 and 2.11:
