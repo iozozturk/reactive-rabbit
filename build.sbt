@@ -1,6 +1,6 @@
 name := "reactive-rabbit"
 
-version := "1.0.1"
+version := "1.0-SNAPSHOT"
 
 organization := "io.logchip"
 
@@ -11,8 +11,6 @@ licenses := Seq("Apache License 2.0" -> url("http://opensource.org/licenses/Apac
 homepage := Some(url("https://github.com/iozozturk/reactive-rabbit"))
 
 scalaVersion := "2.11.6"
-
-crossScalaVersions := Seq("2.10.4", "2.11.6")
 
 scalacOptions ++= Seq("-unchecked", "-deprecation", "-feature", "-Xfatal-warnings", "-target:jvm-1.7")
 
