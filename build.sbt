@@ -1,18 +1,14 @@
-import SonatypeKeys._
-
-sonatypeSettings
-
 name := "reactive-rabbit"
 
-version := "1.0.0"
+version := "1.0.1"
 
-organization := "io.scalac"
+organization := "io.logchip"
 
-startYear := Some(2014)
+startYear := Some(2015)
 
 licenses := Seq("Apache License 2.0" -> url("http://opensource.org/licenses/Apache-2.0"))
 
-homepage := Some(url("https://github.com/ScalaConsultants/reactive-rabbit"))
+homepage := Some(url("https://github.com/iozozturk/reactive-rabbit"))
 
 scalaVersion := "2.11.6"
 
@@ -34,32 +30,4 @@ libraryDependencies ++= Seq(
   "com.google.inject"        %  "guice"                    % "3.0"       % "test", // to make sbt happy
   "org.reactivestreams"      %  "reactive-streams-tck"     % "1.0.0"     % "test",
   "com.typesafe.akka"        %% "akka-stream-experimental" % "1.0-RC2"   % "test"
-)
-
-publishMavenStyle := true
-
-publishTo := {
-  val nexus = "https://oss.sonatype.org/"
-  if (isSnapshot.value)
-    Some("snapshots" at nexus + "content/repositories/snapshots")
-  else
-    Some("releases" at nexus + "service/local/staging/deploy/maven2")
-}
-
-pomIncludeRepository := {
-  x ⇒ false
-}
-
-pomExtra := (
-  <scm>
-    <url>git@github.com:ScalaConsultants/reactive-rabbit.git</url>
-    <connection>scm:git:git@github.com:ScalaConsultants/reactive-rabbit.git</connection>
-  </scm>
-  <developers>
-    <developer>
-      <id>mkiedys</id>
-      <name>Michał Kiędyś</name>
-      <url>https://twitter.com/mkiedys</url>
-    </developer>
-  </developers>
 )
